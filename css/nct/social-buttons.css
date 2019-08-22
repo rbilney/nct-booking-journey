@@ -1,0 +1,27 @@
+.wrapper-social-links .google-plus {
+    background-image: url(icons/gmail.png);
+}
+
+.wrapper-social-links .facebook {
+    background-image: url(icons/facebook-green.png);
+}
+
+.wrapper-social-links .twitter {
+    background-image: url(icons/twitter-green.png);
+}
+
+.wrapper-social-links .linkedin {
+    background-image: url(icons/linkedin-green.png);
+}
+
+.wrapper-social-links .google-plus, .wrapper-social-links .facebook, .wrapper-social-links .twitter, .wrapper-social-links .linkedin {
+    display: inline-block;
+    height: 2.875rem;
+    width: 2.875rem;
+    margin: 0 1.062rem 1rem 0;
+    border: 0.0625rem solid #00876a;
+    -webkit-border-radius: 1.5rem;
+    border-radius: 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}

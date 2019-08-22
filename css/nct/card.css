@@ -1,0 +1,27 @@
+
+.card {
+    border: 0.125rem solid #ced4da;
+    -webkit-border-radius: 0.625rem;
+    border-radius: 0.625rem;
+}
+
+
+.card .card-body h1:first-of-type, 
+.card .card-body h2:first-of-type, 
+.card .card-body h3:first-of-type, 
+.card .card-body h4:first-of-type, 
+.card .card-body h5:first-of-type, 
+.card .card-body h6:first-of-type {
+	margin-top: 0.5rem;
+}
+
+.card .card-body p:last-of-type {
+	margin-bottom: 0.5rem;
+}
+
+
+.card .card-body h4.card-title {
+	font-weight: 400;
+	font-family: "Raleway", arial, sans-serif;
+	font-size: 1.3125rem;
+}

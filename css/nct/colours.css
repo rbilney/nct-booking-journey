@@ -1,0 +1,70 @@
+
+/* ==================== 
+
+Colours 
+
+================= */
+
+
+
+
+
+/*  Background colours */
+
+.nct-dark-green { background-color: rgba(0,136,106,1) !important; }
+	.nct-dark-green-75 { background-color: rgba(0,136,106,0.75) !important; }
+	.nct-dark-green-50 { background-color: rgba(0,136,106,0.5) !important; }
+	.nct-dark-green-25 { background-color: rgba(0,136,106,0.25) !important; }
+
+.nct-light-green { background-color: #3AA43B !important; }
+	.nct-light-green-75 { background-color: rgba(131,185,58,0.75) !important; }
+	.nct-light-green-50 { background-color: rgba(131,185,58,0.5) !important; }
+	.nct-light-green-25 { background-color: rgba(131,185,58,0.25) !important; }
+
+.nct-blue { background-color: #00a1ac !important; }
+	.nct-blue-75 { background-color: rgba(0,161,172,0.75) !important; }
+	.nct-blue-50 { background-color: rgba(0,161,172,0.5) !important; }
+	.nct-blue-25 { background-color: rgba(0,161,172,0.25) !important; }
+
+.nct-orange {background-color: rgba(245,160,41,1) !important; }
+	.nct-orange-75 {background-color: rgba(245,160,41,0.75) !important; }
+	.nct-orange-50 {background-color: rgba(245,160,41,0.5) !important; }
+	.nct-orange-25 {background-color: rgba(245,160,41,0.25) !important; }
+
+.nct-purple {background-color: rgba(133,71,126,1)  !important; }
+	.nct-purple-75 {background-color: rgba(133,71,126,0.75)  !important; }
+	.nct-purple-50 {background-color: rgba(133,71,126,0.5)  !important; }
+	.nct-purple-25 {background-color: rgba(133,71,126,0.25)  !important; }
+
+.nct-yellow {background-color: rgba(248,205,0,1) !important; }
+	.nct-yellow-75 {background-color: rgba(248,205,0,0.75) !important; }
+	.nct-yellow-50 {background-color: rgba(248,205,0,0.5) !important; }	
+	.nct-yellow-25 {background-color: rgba(248,205,0,0.25) !important; }
+
+.nct-pink {background-color: rgba(245,118,155,1) !important; }
+	.nct-pink-75 {background-color: rgba(245,118,155,0.75) !important; }
+	.nct-pink-50 {background-color: rgba(245,118,155,0.5) !important; }
+	.nct-pink-25 {background-color: rgba(245,118,155,0.25) !important; }
+
+
+
+
+/*  Text colours */
+
+.nct-dark-green-text { color: #00886a !important; }
+
+.nct-light-green-text { color: #3AA43B !important; }    
+
+.nct-blue-text { color: #00a1ac !important; }
+
+.nct-orange-text { color: #f5a029 !important; }
+
+.nct-purple-text { color: rgba(133,71,126,1) !important; }
+
+.nct-yellow-text { color: #facc00 !important; }
+
+.nct-pink-text { color: #f5769b !important; }
+
+.text-black { color: #000000 !important; }
+
+.text-white { color: #ffffff !important; }
