@@ -34,7 +34,11 @@ input, .form-control, .custom-file-, textarea {
     background-color: #f2f2f5;
 }
 
-
+.form-control:disabled, .form-control[readonly] {
+    background-color: #fbfbfb;
+    opacity: 1;
+    border: 0.0625rem solid #f0f5f3;;
+}
 
 textarea {
     background-color: #f2f2f5;
