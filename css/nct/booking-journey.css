@@ -90,3 +90,44 @@
 	}
 }
 
+
+
+.membership-selector label.active {
+	background-color: #3AA43B !important;
+	border-color: #3AA43B !important;
+	color: white !important;
+	font-weight: 500;
+	cursor: hand;
+}
+
+.membership-selector label.active .selected-icon, .membership-selector label.active .selected-text {
+	display: inline-block;
+}
+
+.membership-selector label .selected-icon, .membership-selector label .selected-text {
+	display: none;
+}
+
+
+
+dl.accordion-text-block-h2-h3 dt h2::after  {
+    position: relative;
+    right: -90%;
+    display: block;
+    height: 1rem;
+    width: 1.6875rem;
+    background-image: url(https://www.nct.org.uk/themes/custom/nct2/assets/images/icons/accordion-collapsed.png);
+    background-repeat: no-repeat;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    content: "";
+	top: -2rem;
+}
+
+
+
+.membership-option-1, .membership-option-2, .price-option-1, .price-option-2 {
+	display: none;
+}
+
