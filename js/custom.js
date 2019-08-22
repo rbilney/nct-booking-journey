@@ -90,7 +90,32 @@ $(document).ready(function(){
     $( "a.scrollLink" ).click(function( event ) {
         event.preventDefault();
         $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
-    });
+    });	
 });
-  
+
+$("input[name=membershipOption]").on("change", function(){
+	$('.continue-button').removeClass('disabled');
+	
+	if( $(this).attr('id') === "18month"  ) {
+		//console.log('18month');
+		$('.membership-option-1').addClass('d-block');     //, .membership-option-2, .price-option-1, .price-option-2
+		$('.price-option-1').addClass('d-inline-block');
+		
+		$('.membership-option-2').removeClass('d-block');
+		$('.price-option-2').removeClass('d-inline-block');
+		$('.price-option-2').addClass('d-none');
+		$('.price-option-0').addClass('d-none');
+	} else {
+		$('.membership-option-2').addClass('d-block');     //, .membership-option-2, .price-option-1, .price-option-2
+		$('.price-option-2').addClass('d-inline-block');
+		
+		$('.membership-option-1').removeClass('d-block');
+		$('.price-option-0').addClass('d-none');
+		$('.price-option-1').removeClass('d-inline-block');
+		$('.price-option-1').addClass('d-none');
+	}
+	
+});
+
+
   
