@@ -131,3 +131,30 @@ dl.accordion-text-block-h2-h3 dt h2::after  {
 	display: none;
 }
 
+
+.btn-group-toggle label.active .option-selected {
+	visibility:	visible;
+}
+.btn-group-toggle label .option-selected {
+	visibility:	hidden;
+}
+ 
+ 
+.btn-group-toggle label .option-picker {
+	display: inline-block;
+}
+.btn-group-toggle label.active .option-picker {
+	 display: none;
+ }
+
+.course-card-options {
+	  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.membership-instalment-options label.active, .membership-one-off-options label.active, .course-instalment-options label.active, .course-one-off-options label.active {
+	background-color: #3AA43B !important;
+	border-color: #3AA43B !important;
+	color: white !important;
+	font-weight: 500;
+	cursor: hand;
+}
