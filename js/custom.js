@@ -118,4 +118,92 @@ $("input[name=membershipOption]").on("change", function(){
 });
 
 
-  
+
+
+$("input[name=course-payment-options]").on("change", function(){
+	
+	if( $(this).attr('id') === "course-card"  ) {
+		console.log('pay course by card');
+		$('.course-card-options').removeClass('d-none').addClass('d-block');
+		$('.course-instalment-options').addClass('d-none').removeClass('d-block');
+	} else {
+		console.log('pay course by debit debit');
+		$('.course-card-options').addClass('d-none').removeClass('d-block');
+		$('.course-instalment-options').removeClass('d-none').addClass('d-block');
+		$('.course-one-off-options').addClass('d-none').removeClass('d-block');
+	}
+});
+
+
+
+$("input[name=course-card-options]").on("change", function(){
+	
+	if( $(this).attr('id') === "course-card-instalments"  ) {
+		console.log('pay by card instalments');
+		$('.course-instalment-options').removeClass('d-none').addClass('d-block');
+		$('.course-one-off-options').addClass('d-none').removeClass('d-block');
+	} else {
+		console.log('pay all at once on card');
+		$('.course-instalment-options').addClass('d-none').removeClass('d-block');
+		$('.course-one-off-options').removeClass('d-none').addClass('d-block');
+	}
+});
+
+
+$("input[name=course-one-off-options]").on("change", function(){
+	console.log('chosen one off');
+	$('.course-step-2').toggle();
+	$('.course-step-1').toggle();
+	$('.edit-course-selection').show();
+});
+
+
+$("input[name=course-instalment-options]").on("change", function(){
+	console.log('chosen an instalment option');
+	$('.course-step-2').toggle();
+	$('.course-step-1').toggle();
+	$('.edit-course-selection').show();
+	
+	$('.course-instalment-options label').each(function(){
+		$(this).toggle();		
+	});
+	
+	$(this).parent().show();
+});
+
+
+
+$("input[name=membership-payment-options]").on("change", function(){
+	
+	if( $(this).attr('id') === "membership-direct-debit"  ) {
+		console.log('pay by direct debit');
+		$('.membership-instalment-options').removeClass('d-none').addClass('d-block');
+		$('.membership-one-off-options').addClass('d-none').removeClass('d-block');
+	} else {
+		console.log('pay by card');
+		$('.membership-instalment-options').addClass('d-none').removeClass('d-block');
+		$('.membership-one-off-options').removeClass('d-none').addClass('d-block');
+	}
+});
+
+
+$("input[name=membership-one-off-options]").on("change", function(){
+	console.log('chosen one off');
+	$('.membership-step-2').toggle();
+	$('.membership-step-1').toggle();
+	$('.edit-membership-selection').show();
+});
+
+
+$("input[name=membership-instalment-options]").on("change", function(){
+	console.log('chosen an instalment option');
+	$('.membership-step-2').toggle();
+	$('.membership-step-1').toggle();
+	
+	$('.membership-instalment-options label').each(function(){
+		$(this).toggle();		
+	});
+	
+	$(this).parent().show();
+	$('.edit-membership-selection').show();
+});
