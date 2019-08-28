@@ -22,7 +22,7 @@
 
 
 
-   <title>Become an NCT Member | NCT</title>
+   <title>Payment | NCT</title>
    <meta name="description" content="Details about the fonts, colours, links, buttons used on the NCT website.">
 
 
@@ -138,95 +138,147 @@
 			<ol class="booking-progress-bar">
 				<li class="completed"><a href="index.html"><span class="step-number">1.</span> <span class="step-name">Your basket</span></a></li>
 				<li class="completed"><a href="2-confirm-details.html"><span class="step-number">2.</span> <span class="step-name">Confirm details</span></a></li>
-				<li class="active"><span class="step-number">3.</span> <span class="step-name">Membership</span></li>
-				<li class="disabled"><span class="step-number">4.</span> <span class="step-name">Payment</span></li>
+				<li class="completed"><a href="3-membership-page.html"><span class="step-number">3.</span> <span class="step-name">Membership</span></a></li>
+				<li class="active"><span class="step-number">4.</span> <span class="step-name">Payment</span></li>
 				<li class="disabled"><span class="step-number">5.</span> <span class="step-name">Confirmation</span></li>
 			</ol>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-12 col-md-7 col-lg-8"><!-- ********** Main column ********** -->
-			<h2 class="mt-4">Hi Jane,</h2>
-			<p class="introduction">We're currently running a great offer on our membership.</p> 
+			<h2 class="mt-4 mb-5">Payment options</h2>
+			<p class="introduction section-heading">How would you like to pay for your course?</p> 
 			
+							
+
+			<div class="btn-group btn-group-toggle d-block course-payment-options" data-toggle="buttons">
+				<div class="row mt-3 course-step-1">
+					<div class="col">
+						<label class="btn btn-outline-secondary w-100 p-5">
+							<input type="radio" name="course-payment-options" id="course-card" autocomplete="off">
+							<span class="h1 pb-3"><i class="far fa-credit-card"></i></span><br/>
+							Debit/credit card
+						</label>
+					</div>
+					<div class="col">
+						<label class="btn btn-outline-secondary w-100 p-4">
+							<input type="radio" name="course-payment-options" id="course-debit" autocomplete="off"> <img src="img/direct-debit.png" style="width: 100px;" /><br />Direct Debit
+						</label>
+					</div>
+				</div>
+			</div>	
 					
-			<div class="row">
+			<div class="btn-group btn-group-toggle d-none course-card-options" data-toggle="buttons">
+				<div class="row mt-3 course-step-2">
+					<div class="col">
+						<label class="btn btn-outline-secondary w-100 p-4">
+							<input type="radio" name="course-card-options" id="course-card-single" autocomplete="off" > One-off payment
+						</label>
+					</div>
+					<div class="col">
+						<label class="btn btn-outline-secondary w-100 p-4">
+							<input type="radio" name="course-card-options" id="course-card-instalments" autocomplete="off"> Pay by instalments
+						</label>
+					</div>
+				</div>
+			</div>						
+					
+			<div class="btn-group btn-group-toggle d-none course-instalment-options" data-toggle="buttons">
+				<div class="row mt-3">
+					<div class="col">
+						<label class="btn btn-outline-secondary w-100 p-2 pl-3 text-left">
+							<input type="radio" name="course-instalment-options" id="option1" autocomplete="off"> 4 monthly payments of £91.75 <span class="float-right mr-2 option-picker">Select</span>  <i class="fas fa-check mr-3 mt-1 selected-icon float-right option-selected"></i> 
+						</label>
+
+						<label class="btn btn-outline-secondary w-100 p-2 pl-3 text-left">
+							<input type="radio" name="course-instalment-options" id="option2" autocomplete="off"> 3 monthly payments of £122.33 <span class="float-right mr-2 option-picker">Select</span>  <i class="fas fa-check mr-3 mt-1 selected-icon float-right option-selected"></i> 
+						</label>
+			
+						<label class="btn btn-outline-secondary w-100 p-2 pl-3 text-left">
+							<input type="radio" name="course-instalment-options" id="option3" autocomplete="off"> 2 monthly payments of £183.50 <span class="float-right mr-2 option-picker">Select</span>  <i class="fas fa-check mr-3 mt-1 selected-icon float-right option-selected"></i> 
+						</label>
+					</div>
+				</div>
+			</div>						
+
+			<div class="btn-group btn-group-toggle d-none course-one-off-options" data-toggle="buttons">
+				<div class="row mt-3">
+					<div class="col">
+						<label class="btn btn-outline-secondary w-100 p-2 text-left pl-3">
+							<input type="radio" name="course-one-off-options" id="option1" autocomplete="off"> One-off payment of £367  <span class="float-right mr-2 option-picker">Select</span>  <i class="fas fa-check mr-3 mt-1 selected-icon float-right option-selected"></i> 
+						</label>
+					</div>
+				</div>
+			</div>	
+					
+			<div class="row edit-course-selection" style="display: none;">
+				<div class="col text-right"><p class="font-small">(<a href="#">Change selection</a>)</p></div>
+			</div>
+					
+			<br/><br />
+					
+					
+			<div class="row mt-5">
 				<div class="col-12">
-					<h2 class="section-heading">Join us - and each other</h2>
-					<p>Being the UK’s largest charity for parents also means we’re the UK’s largest community of new parents.</p>
-					<p>By becoming NCT members, thousands of parents have formed lifelong friendships and support networks. Through us, they’ve shared experiences, excitement and inspiration during some of the most amazing times of their lives – and beyond.</p>
-					<p>Your membership donation will support our work in your community, and in local communities across the UK. </p>			
-					
-
-					<dl class="accordion-text-block-h2-h3">
-						<dt aria-controls="courseOutline" aria-expanded="false" data-toggle="collapse" href="#courseOutline" role="button">
-							<h2 class="section-heading mb-0">What's included</h2>
-						</dt>
-						<dd class="collapse pb-4" id="courseOutline">
-							<p>Text to be confirmed.</p>
-						</dd>
-					</dl>
-
+					<p class="introduction section-heading">How would you like to pay for your NCT membership?</p> 
 				</div>
 			</div>
 			
-			
-			<div class="row">
-				<div class="col-12">
-					<h2 class="section-heading mt-3">Membership options</h2>		
+			<div class="btn-group btn-group-toggle d-block membership-payment-options" data-toggle="buttons">
+				<div class="row mt-3 membership-step-1">
+					<div class="col">
+						<label class="btn btn-outline-secondary w-100 p-5">
+							<input type="radio" name="membership-payment-options" id="membership-card" autocomplete="off">
+							<span class="h1 pb-3"><i class="far fa-credit-card"></i></span><br/>
+							Debit/credit card
+						</label>
+					</div>
+					<div class="col">
+						<label class="btn btn-outline-secondary w-100 p-4">
+							<input type="radio" name="membership-payment-options" id="membership-direct-debit" autocomplete="off"> <img src="img/direct-debit.png" style="width: 100px;" /><br />Direct Debit
+						</label>
+					</div>
 				</div>
+			</div>	
+			
+			
+			<div class="btn-group btn-group-toggle d-none membership-instalment-options" data-toggle="buttons">
+				<div class="row mt-3">
+					<div class="col">
+						<label class="btn btn-outline-secondary w-100 p-2 pl-3 text-left">
+							<input type="radio" name="membership-instalment-options" id="option1" autocomplete="off"> Direct debit of £57 every 18 months <span class="float-right mr-2 option-picker">Select</span>  <i class="fas fa-check mr-3 mt-1 selected-icon float-right option-selected"></i> 
+						</label>
+			
+						<label class="btn btn-outline-secondary w-100 p-2 text-left">
+							<input type="radio" name="membership-instalment-options" id="option2" autocomplete="off"> Direct debit of £9.50 every quarter <span class="float-right mr-2 option-picker">Select</span>  <i class="fas fa-check mr-3 mt-1 selected-icon float-right option-selected"></i> 
+						</label>
+					</div>
+				</div>
+			</div>							
+			
+			<div class="btn-group btn-group-toggle d-none membership-one-off-options" data-toggle="buttons">
+				<div class="row mt-3">
+					<div class="col">
+						<label class="btn btn-outline-secondary w-100 p-2 pl-3 text-left">
+							<input type="radio" name="membership-one-off-options" id="option1" autocomplete="off"> One-off payment of £57 <span class="float-right mr-2 option-picker">Select</span>  <i class="fas fa-check mr-3 mt-1 selected-icon float-right option-selected"></i> 
+						</label>
+					</div>
+				</div>
+			</div>							
+
+			<div class="row edit-membership-selection" style="display: none;">
+				<div class="col text-right"><p class="font-small">(<a href="#">Change selection</a>)</p></div>
 			</div>
 			
-			<div class="btn-group btn-group-toggle d-block" data-toggle="buttons">
-					
-				<div class="row align-items-end">
-					<div class="col-12 col-sm-6 col-md-12 col-lg-6 mb-3">
-						<div class="card mx-2" style="border-radius: 0.65rem 0.65rem; background-color: #00a1ac; border: 1px solid #00a1ac;">
-							<div class="card-header text-light font-weight-bold py-1"><small>Best value</small></div>
-
-							<div class="card-body" style="background-color: #fff; border-radius: 0.65rem 0.65rem 0 0; padding-bottom: 10px;">
-								<h4 class="card-title" style="font-weight: 500;">18 month membership</h4>
-
-								<p class="card-text">18 months money off baby supplies, holidays and services when you help us continue being the leading charity for pregnancy and young families.</p>
-								<p class="font-small"><span style="font-weight: 400; font-family: 'Raleway'; font-size: 2.1rem;">£57</span> (or £9.50 per quarter)</p>
-
-								
-								
-							</div>
-							
-							<div class="card-footer m-0 p-0 membership-selector" style="background-color: #fff; border-radius: 0 0 0.65rem 0.65rem; border: 0; overflow: hidden;">
-								<label class="btn btn-secondary w-100 m-0 py-3">
-									<input type="radio" name="membershipOption" id="18month" autocomplete="off">Select<span class="selected-text">ed</span> <i class="fas fa-check ml-3 selected-icon"></i>
-								</label>
-							</div>
-						</div>
-					
-					</div>
-					<div class="col-12 col-sm-6 col-md-12 col-lg-6 mb-3">
-						<div class="card mx-2 mt-4 mt-sm-0" style="border-radius: 0.65rem;">
-						<div class="card-body" style="background-color: #fff; border-radius: 0.65rem 0.65rem 0 0; padding-bottom: 10px;">
-						<h4 class="card-title" style="font-weight: 500;">12 month membership</h4>
-
-						<p class="card-text">12 months money off baby supplies, holidays and services when you help us continue being the leading charity for pregnancy and young families.</p>
-						<p class="font-small"><span style="font-weight: 400; font-family: 'Raleway'; font-size: 2.1rem;">£48</span> (or £12 per quarter)</p>
-							
-							
-
-						</div>
-						<div class="card-footer m-0 p-0 membership-selector" style="background-color: #fff; border-radius: 0 0 0.65rem 0.65rem; border: 0; overflow: hidden;">
-								<label class="btn btn-secondary w-100 m-0 py-3">
-									<input type="radio" name="membershipOption" id="12month" autocomplete="off">Select<span class="selected-text">ed</span> <i class="fas fa-check ml-3 selected-icon"></i>
-								</label>
-							</div>
-						</div>
+			<div class="row mt-2">
+				<div class="col-12">
+					<h5 class="font-weight-bold">Would you like to claim Gift Aid?</h5> 
+					<p>Ticking the optional Gift Aid box means NCT can get the most of your membership donation at no extra cost to you. This means that for every £1 you give, we will receive an extra 25p from HM Revenue and Customs.</p>
+					<div class="form-check">
+						<input type="checkbox" name="radio" id="radio1">
+						<label for="radio1" class="ml-5 font-small">I agree to the NCT claiming tax under the Gift Aid scheme on all my donations and subscriptions until I advise otherwise. I confirm that I am paying an amount of UK Income and/or Capital Gains Tax which is at least equal to the amount of tax that all Charities and Community Amateur Sports Clubs (CASCs) will reclaim on my donation in each tax year (6 April one year to 5 April the next).</label> 
 					</div>
 				</div>
-			
-			
-			
-			
-  
-
 			</div>
 			
 		</div>
@@ -251,8 +303,6 @@
 					
 				
 					
-					
-					<div class="membership-option-1">
 					<hr />
 					<div class="row no-gutters">
 						<div class="col-8">
@@ -263,21 +313,7 @@
 						</div>
 						<p class="small text-secondary">(<a href="#">Remove</a>)</p>
 					</div>
-					</div>
 					
-					
-					<div class="membership-option-2">
-					<hr />
-					<div class="row no-gutters">
-						<div class="col-8">
-							<p class="font-small">12 month membership</p>
-						</div>
-						<div class="col-4 text-right">
-							<p class="font-small">£48</p>
-						</div>
-						<p class="small text-secondary">(<a href="#">Remove</a>)</p>
-					</div>
-					</div>
 					
 					
 					<hr />
@@ -287,9 +323,7 @@
 							<h4 class="card-title mt-0">Total</h4>
 						</div>
 						<div class="col-4 text-right">
-							<p class="price-option-0">£367</p>
-							<p class="price-option-1">£424</p>
-							<p class="price-option-2">£415</p>
+							<p>£424</p>
 						</div>
 					</div>
 					
@@ -313,8 +347,8 @@
 
 		<div class="row mt-5">
 			<div class="col-12 col-md-7 col-lg-8 text-center">
-				<p><a href="4-payment-page.html" class="btn button-large disabled continue-button">Continue with membership</a></p>
-				<p class="mt-5"><a href="4-payment-page.html" class="font-small">Continue without membership</a></p>
+				<p><a href="confirm-details.html" class="btn button-large">Continue to payment</a></p>
+				
 			</div>
 		</div>
 
