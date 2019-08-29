@@ -197,6 +197,12 @@ $("input[name=course-instalment-options]").on("change", function(){
 	
 });
 
+$('#change-course-option').on("click", function(e){
+	e.preventDefault();
+	$('.course-instalment-options label').each(function(){
+		$(this).show();		
+	});
+});
 
 
 $("input[name=membership-payment-options]").on("change", function(){
