@@ -210,6 +210,11 @@ $("input[name=membership-payment-options]").on("change", function(){
 		$('.membership-instalment-options').addClass('d-none').removeClass('d-block');
 		$('.membership-one-off-options').removeClass('d-none').addClass('d-block');
 	}
+	
+	$([document.documentElement, document.body]).animate({
+		scrollTop: $(".membership-payment-options-wrapper").offset().top
+	}, 500);
+	
 });
 
 
@@ -218,6 +223,10 @@ $("input[name=membership-one-off-options]").on("change", function(){
 	$('.membership-step-2').toggle();
 	$('.membership-step-1').toggle();
 	$('.edit-membership-selection').show();
+	
+	$([document.documentElement, document.body]).animate({
+		scrollTop: $(".membership-payment-options-wrapper").offset().top
+	}, 500);
 });
 
 
@@ -232,4 +241,8 @@ $("input[name=membership-instalment-options]").on("change", function(){
 	
 	$(this).parent().show();
 	$('.edit-membership-selection').show();
+	
+		$([document.documentElement, document.body]).animate({
+		scrollTop: $(".membership-payment-options-wrapper").offset().top
+	}, 500);
 });
