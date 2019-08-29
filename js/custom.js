@@ -126,12 +126,23 @@ $("input[name=course-payment-options]").on("change", function(){
 		console.log('pay course by card');
 		$('.course-card-options').removeClass('d-none').addClass('d-block');
 		$('.course-instalment-options').addClass('d-none').removeClass('d-block');
+		
+		$([document.documentElement, document.body]).animate({
+			scrollTop: $(".course-step-2").offset().top
+		}, 500);	
+		
 	} else {
 		console.log('pay course by debit debit');
 		$('.course-card-options').addClass('d-none').removeClass('d-block');
 		$('.course-instalment-options').removeClass('d-none').addClass('d-block');
 		$('.course-one-off-options').addClass('d-none').removeClass('d-block');
+		
+		$([document.documentElement, document.body]).animate({
+			scrollTop: $(".course-instalment-options").offset().top
+		}, 500);	
 	}
+
+	
 });
 
 
@@ -147,6 +158,10 @@ $("input[name=course-card-options]").on("change", function(){
 		$('.course-instalment-options').addClass('d-none').removeClass('d-block');
 		$('.course-one-off-options').removeClass('d-none').addClass('d-block');
 	}
+	$([document.documentElement, document.body]).animate({
+		scrollTop: $(".course-payment-options-wrapper").offset().top
+	}, 500);
+	
 });
 
 
@@ -155,6 +170,12 @@ $("input[name=course-one-off-options]").on("change", function(){
 	$('.course-step-2').toggle();
 	$('.course-step-1').toggle();
 	$('.edit-course-selection').show();
+	
+	$([document.documentElement, document.body]).animate({
+		scrollTop: $(".course-payment-options-wrapper").offset().top
+	}, 500);
+	
+	
 });
 
 
@@ -169,6 +190,11 @@ $("input[name=course-instalment-options]").on("change", function(){
 	});
 	
 	$(this).parent().show();
+	
+	$([document.documentElement, document.body]).animate({
+		scrollTop: $(".course-payment-options-wrapper").offset().top
+	}, 500);
+	
 });
 
 
