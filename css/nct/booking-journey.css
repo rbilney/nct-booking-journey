@@ -26,6 +26,9 @@
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
+
+
+
 .booking-progress-bar li a {
 	color: white;
 	font-family: "Raleway";
@@ -54,6 +57,12 @@
 	background-clip: padding-box;
 }
 
+.booking-progress-bar li.active:last-child:after {
+	border: 0;
+	content: '';
+	padding: 0;
+}
+
 .booking-progress-bar li.active {
 	background-color: rgba(0,136,106,1);
 	color: #ffffff;
@@ -70,7 +79,9 @@
 .booking-progress-bar li.completed:after {
 	background-color: #3AA43B;
 }
-
+	.booking-progress-bar.six-step li {
+		width:  16.6% !important;
+	}
 
 @media (max-width: 768px) { 
 	.booking-progress-bar li  {
@@ -88,6 +99,8 @@
 	.booking-progress-bar li.active .step-name {
 		display: inline-block;
 	}
+	
+
 }
 
 
@@ -157,4 +170,8 @@ dl.accordion-text-block-h2-h3 dt h2::after  {
 	color: white !important;
 	font-weight: 500;
 	cursor: hand;
+}
+
+footer p {
+	font-size: 0.75rem;
 }
