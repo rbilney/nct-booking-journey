@@ -1,4 +1,4 @@
-// Postcode test
+// Postcode test-
 
 $('#edit-postnatal-course-search-postcode').keyup(function() {
         this.value = this.value.toLocaleUpperCase();
@@ -115,6 +115,12 @@ $("input[name=membershipOption]").on("change", function(){
 		$('.price-option-1').addClass('d-none');
 	}
 	
+});
+
+
+
+$("input[name=terms-conditions]").on("change", function(){
+	$('.terms-button').removeClass('disabled');
 });
 
 
