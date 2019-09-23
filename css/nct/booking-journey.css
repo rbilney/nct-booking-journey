@@ -76,12 +76,14 @@
 .booking-progress-bar li.active:after {
 	background-color: rgba(0,136,106,1);
 }
+
 .booking-progress-bar li.completed:after {
 	background-color: #3AA43B;
 }
-	.booking-progress-bar.six-step li {
-		width:  16.6% !important;
-	}
+
+.booking-progress-bar.six-step li {
+	width:  16.6% !important;
+}
 
 @media (max-width: 768px) { 
 	.booking-progress-bar li  {
@@ -89,9 +91,16 @@
 	}
 	
 	.booking-progress-bar li.active {
-		width: 52%
+		width: 52%;
 	}
 	
+	.booking-progress-bar.six-step li {
+		width:  12% !important;
+	}
+	
+	.booking-progress-bar.six-step li.active {
+		width:  40% !important;
+	}
 	
 	.booking-progress-bar li .step-name, .booking-progress-bar li.completed .step-name  {
 		display: none;
