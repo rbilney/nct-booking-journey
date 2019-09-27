@@ -184,3 +184,12 @@ dl.accordion-text-block-h2-h3 dt h2::after  {
 footer p {
 	font-size: 0.75rem;
 }
+
+
+dl.accordion-text-block-h2-h3 dt[aria-expanded='true'] h2::after, dl.accordion-text-block-h2-h3 dt[aria-expanded='true'] h3::after {
+	-webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+}
