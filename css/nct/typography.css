@@ -210,6 +210,10 @@ ul, ol {
 
 li {
 	padding-left: 0;
+	margin-bottom: 0.75rem;
+	font-size: 1.13rem;
+	font-weight:300;
+	font-family: "Lato";
 }
 
 
