@@ -1,0 +1,197 @@
+.schedule .schedule-item {
+	padding: 0.5rem 0;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+
+
+.booking-progress-bar {
+	/* background-color: #3AA43B; 
+	border-radius: 1rem; */
+	margin: 0;
+	font-size: 0.825rem;
+	padding-left: 0;
+
+}
+
+.booking-progress-bar li {
+	font-family: "Raleway";
+	color: #ffffff;
+	background-color: #3AA43B;
+	width: 20%;
+	text-align: center;
+	list-style-type: none;
+	position: relative;
+	float: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+		font-size: 0.825rem;
+
+}
+
+
+
+.booking-progress-bar li a {
+	color: white;
+	font-family: "Raleway";
+}
+
+.booking-progress-bar li:first-child {
+	border-radius: 1rem 0 0 1rem;
+}
+
+.booking-progress-bar li:last-child {
+	border-radius: 0 1rem 1rem 0;
+}
+
+.booking-progress-bar li:after {
+    position: absolute;
+    content: ' ';
+    border-right: 4px solid white;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    display: inline-block;
+    padding: 10px;
+    right: -10px;
+    z-index: 1;
+    border-bottom: 4px solid white;
+    top: 3px;
+	background-clip: padding-box;
+}
+
+.booking-progress-bar li.active:last-child:after {
+	border: 0;
+	content: '';
+	padding: 0;
+}
+
+.booking-progress-bar li.active {
+	background-color: rgba(0,136,106,1);
+	color: #ffffff;
+}
+
+.booking-progress-bar li.disabled {
+	background-color: rgba(0,0,0,0.3);
+	color: #ffffff;
+}
+
+.booking-progress-bar li.active:after {
+	background-color: rgba(0,136,106,1);
+}
+
+.booking-progress-bar li.completed:after {
+	background-color: #3AA43B;
+}
+
+.booking-progress-bar.six-step li {
+	width:  16.6% !important;
+}
+
+@media (max-width: 768px) { 
+	.booking-progress-bar li  {
+		width: 12%;
+	}
+	
+	.booking-progress-bar li.active {
+		width: 52%;
+	}
+	
+	.booking-progress-bar.six-step li {
+		width:  12% !important;
+	}
+	
+	.booking-progress-bar.six-step li.active {
+		width:  40% !important;
+	}
+	
+	.booking-progress-bar li .step-name, .booking-progress-bar li.completed .step-name  {
+		display: none;
+	}
+	.booking-progress-bar li.active .step-name {
+		display: inline-block;
+	}
+	
+
+}
+
+
+
+.membership-selector label.active {
+	background-color: #3AA43B !important;
+	border-color: #3AA43B !important;
+	color: white !important;
+	font-weight: 500;
+	cursor: hand;
+}
+
+.membership-selector label.active .selected-icon, .membership-selector label.active .selected-text {
+	display: inline-block;
+}
+
+.membership-selector label .selected-icon, .membership-selector label .selected-text {
+	display: none;
+}
+
+
+
+dl.accordion-text-block-h2-h3 dt h2::after  {
+    position: relative;
+    right: -90%;
+    display: block;
+    height: 1rem;
+    width: 1.6875rem;
+    background-image: url(https://www.nct.org.uk/themes/custom/nct2/assets/images/icons/accordion-collapsed.png);
+    background-repeat: no-repeat;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    content: "";
+	top: -2rem;
+}
+
+
+
+.membership-option-1, .membership-option-2, .price-option-1, .price-option-2 {
+	display: none;
+}
+
+
+.btn-group-toggle label.active .option-selected {
+	visibility:	visible;
+}
+.btn-group-toggle label .option-selected {
+	visibility:	hidden;
+}
+ 
+ 
+.btn-group-toggle label .option-picker {
+	display: inline-block;
+}
+.btn-group-toggle label.active .option-picker {
+	 display: none;
+ }
+
+.course-card-options {
+	  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.membership-instalment-options label.active, .membership-one-off-options label.active, .course-instalment-options label.active, .course-one-off-options label.active {
+	background-color: #3AA43B !important;
+	border-color: #3AA43B !important;
+	color: white !important;
+	font-weight: 500;
+	cursor: hand;
+}
+
+footer p {
+	font-size: 0.75rem;
+}
+
+
+dl.accordion-text-block-h2-h3 dt[aria-expanded='true'] h2::after, dl.accordion-text-block-h2-h3 dt[aria-expanded='true'] h3::after {
+	-webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+}
