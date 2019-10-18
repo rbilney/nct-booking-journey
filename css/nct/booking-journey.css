@@ -87,6 +87,10 @@
 	width:  16.6% !important;
 }
 
+.booking-progress-bar.three-step li {
+	width:  33.3% !important;
+}
+
 @media (max-width: 768px) { 
 	.booking-progress-bar li  {
 		width: 12%;
